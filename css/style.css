@@ -1,9 +1,12 @@
 body {
     background-color: aqua;
 }
-h1 {
-    color:rgb(200, 255, 0)
+
+img{
+    width: 200px; /*ancho de la imagen*/
+    height: 200px; /*Alto de la imagen*/
 }
-H3 {
-    color: blue;
+
+img:hover{
+    background-color: blue;
 }
