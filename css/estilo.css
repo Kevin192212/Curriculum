@@ -43,7 +43,7 @@ header::before {
 nav {
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: aqua;
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0,0,0,.2);
     position: fixed;
@@ -65,7 +65,7 @@ nav {
 }
 
 .nav .enlaces-header a {
-    color: #5d6678;
+    color: black;
     text-decoration: none;
     margin-left: 20px;
     padding: 12px;
@@ -74,8 +74,8 @@ nav {
 
 .nav .enlaces-header a:hover {
     color: #fff;
-    background-color: #d03d3d;
-    border-color: #d03d3d;
+    background-color: blue;
+    border-color: blue;
     transition: all ease-in-out .5s;
 }
 
@@ -121,9 +121,9 @@ nav {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: #d03d3d;
+    background-color: aqua;
     text-align: center;
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 12px 0;
     border-radius: 5px;
@@ -133,10 +133,15 @@ nav {
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
 
+.contenido-header a:hover {
+    background-color: blue;
+    color: #fff;
+
+}
 /* ################################# EDUCATION ################################### */
 
 .section-education {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(147, 255, 255);
 }
 
 .section-education h2 {
@@ -165,15 +170,17 @@ nav {
     padding: 30px;
 }
 .education i {
-    border: 2px solid aquamarine ;
+    border: 2px solid rgb(0, 109, 128);
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: rgb(0, 109, 128);
     color: #fff;
     width: 50px;
     height: 50px;
-    font-size: 22px;
+    font-size: 25px;
     text-align: center;
-    line-height: 36px;
+    line-height: 43px;
+    margin-left: 40%;
+    margin-bottom: 15px;
 }
 
 .education:hover {
@@ -196,7 +203,7 @@ nav {
 /* ################################## HABILIDADES ################################## */
 
 .habilidades {
-    background-color: #5d6678;
+    background-color: none;
 }
 
 .habilidades h1 {
@@ -253,6 +260,9 @@ nav {
 
 /* ############################### CERTIFICADOS ################################ */
 
+.section-certificates {
+    background-color: rgb(147, 255, 255);
+}
 .section-certificates .title {
     display: block;
     margin: 15px 0 0 0;
@@ -270,9 +280,10 @@ nav {
 }
 
 .certificates {
+    background-color: #fff;
     width: 22%;
     border-radius: 5px;
-    border: 1px solid #008cff;
+    border: 1px solid rgb(18, 136, 136);
     text-align: center;
     margin-top: 15px;
     padding: 15px;
@@ -292,11 +303,11 @@ nav {
 
 .certificates:hover {
     background-color: rgb(0, 195, 255) ;
-    box-shadow: 0 0 8px aquamarine;
+    box-shadow: 0 0 28px aquamarine;
+    border: none;
     transition: all ease-in-out .4s;
     color: #fff;
     transform: scale(1.06);
-    border: 2px solid blue;
 }
 
 .certificates a:hover {
@@ -351,7 +362,7 @@ nav {
 
 
 footer {
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(54, 54, 54);
     padding: 50px 0 20px 0;
     overflow: hidden;
     display: flex;
@@ -509,14 +520,43 @@ footer {
         margin-bottom: 15px;
     }
 
+    /* SECTION HABILIDADES */
+
+    .skills{
+        width: 50%;
+        margin-right: 15px;
+    }
+
     /* SECTION CERTIFICATES */
 
+    .title h1 {
+        margin-left: auto;
+    }
+
+    .contenedor {
+        margin: auto;
+    }
+
     .certificates {
-        width: 45%;
+        width: 50%;
+        margin-right: 15px;
     }
 
     .certificates > img {
         height: 80px;
+    }
+
+    /* SECTION CONTACTO */
+
+    .space-infoperson-element-one > img {
+        display: none;
+    }
+
+    .space-infoperson-element-three > img {
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+
     }
 
     /* SECTION FOOTER */
@@ -528,4 +568,5 @@ footer {
     .partFooter {
         width: 80%;
     }
+    
 }
